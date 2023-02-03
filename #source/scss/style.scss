@@ -269,7 +269,111 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 //===================================================
 
+//BLOCK WHY CHOOSE US
+.why-top {
+	@include flexbox();
+	background-color: #000;
+}
+.why-top__column {
+	flex:  0 0 50%;
+	@media (max-width: $md2+px) {
+		flex: 1 1 100%;
+		&:last-child {
+			display: none;
+		}
+	}
+}
+.why-top__text {
+	color: #fff;
+	font-family: 'Akzidenz-GroteskBQBold';
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-align: right;
+	padding: 50px 60px 50px 0px;
+	@media (max-width: 880px) {
+		font-size: 40px;
+		padding: 30px 0px;
+	}
+	@media (max-width: $md2+px) {
+		font-size: 30px;
+		padding: 20px 0px;
+		text-align: center;
+	}
+}
+.why-top__image {
+	height: 100%;
+}
+.why-top__pic {
+	display: none;
+}
+.why-body {
+	background-color: #ebebeb;
+	padding: 50px 0px 0px 0px;
+}
+.why-body-row {
+	@include flexbox();
+	flex-wrap: wrap;
+}
+.why-body__column {
+	flex: 0 0 50%;
+	margin: 0px 0px 50px 0px;
+	@media (max-width: $md1+px) {
+		flex: 1 1 100%;
+	}
+	@media (max-width: $md3+px) {
+		margin: 0px 0px 30px 0px;
+	}
+}
+.why-body__item {
+	@include flexbox();
+	margin: 0px 0px 0px 20px;
+}
+.why-body-item__icon {
+	flex: 0 0 100px;
+	height: 100px;
+	background-color: #000;
+	@include flexbox();
+	justify-content: center;
+	align-items: center;
+	@media (max-width: $md3+px) {
+		flex: 0 0 80px;
+		height: 80px;
+	}
+}
+.why-body-item__svg {
+	width: 75px;
+	height: 75px;
+	@media (max-width: $md3+px) {
+		width: 65px;
+		height: 65px;
+	}
+}
+.why-body-item__body {
+	flex: 1 1 100%;
+	padding: 0px 0px 0px 11px;
+	@include flexbox();
+	flex-direction: column;
+}
+.why-body-item__body__title {
+	flex: 1 1 auto;
+	font-family: 'Akzidenz-GroteskBQBold';
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	@media (max-width: $md3+px) {
+		font-size: 20px;
+	}
+}
+.why-body-item__body__text {
+	font-size: 15px;
+	line-height: 25px;
+	padding: 0px 15px 0px 0px;
+}
+//===================================================
+
 //BLOCK ...
+
 
 //===================================================
 
