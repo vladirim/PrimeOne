@@ -443,6 +443,12 @@ header {
   display: flex;
   font-size: 0;
   background-color: #000;
+  margin: 0px 0px 75px 0px;
+}
+@media (max-width: 767.98px) {
+  .private {
+    margin: 0px 0px 40px 0px;
+  }
 }
 
 .private__column {
@@ -526,5 +532,134 @@ header {
   color: #fff;
   font-size: 15px;
   margin: 0px 0px 0px 15px;
+  letter-spacing: 1.5px;
+}
+
+.services {
+  margin: 0px 0px 40px 0px;
+  padding: 0px 5px 0px 5px;
+}
+@media (max-width: 767.98px) {
+  .services {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.services-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+}
+@media (max-width: 767.98px) {
+  .services-body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.services__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  margin: 0px 0px 40px 0px;
+  padding: 0px 5px 0px 5px;
+}
+@media (max-width: 767.98px) {
+  .services__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+@media (max-width: 380px) {
+  .services__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
+.services__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services-item__image {
+  display: block;
+  padding: 0 0 110% 0;
+  margin: 0px 0px 25px 0px;
+}
+@media (max-width: 380px) {
+  .services-item__image {
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+.services-item__pic {
+  display: none;
+}
+
+.services-item__title {
+  height: 50px;
+  overflow: hidden;
+  max-width: 185px;
+  padding: 0px 10px 0px 0px;
+  display: block;
+  font-family: "Akzidenz-GroteskBQBold";
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #000;
+  margin: 0px 0px 30px 0px;
+}
+@media (max-width: 380px) {
+  .services-item__title {
+    max-width: none;
+    height: auto;
+    overflow: visible;
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+.services-item__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 185px;
+  padding: 0px 10px 0px 0px;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0px 0px 20px 0px;
+}
+@media (max-width: 380px) {
+  .services-item__text {
+    max-width: none;
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+.services-item__btn {
+  margin: 0px 0px 29px 0px;
+}
+@media (max-width: 380px) {
+  .services-item__btn {
+    margin: 0px 0px 19px 0px;
+  }
+}
+
+.services-item__link {
+  font-family: "Bebas";
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: underline;
   letter-spacing: 1.5px;
 }

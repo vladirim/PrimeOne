@@ -114,6 +114,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .private {
 	@include flexbox();
 	background-color: #000;
+	margin: 0px 0px 75px 0px;
+	@media (max-width: $md2+px) {
+		margin: 0px 0px 40px 0px;
+	}
 }
 .private__column {
 	flex: 0 0 50%;
@@ -165,8 +169,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	@include flexbox();
 	align-items: center;
 }
-.private-body-buttons__item {
-}
 .private-body-buttons__link {
 	font-family: 'Bebas';
 	text-transform: uppercase;
@@ -176,6 +178,99 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin: 0px 0px 0px 15px;
 	letter-spacing: 1.5px;
 }
+//===================================================
+
+//BLOCK SERVICES
+.services {
+	margin: 0px 0px 40px 0px;
+	padding: 0px 5px 0px 5px;
+	@media (max-width: $md2+px) {
+		margin: 0px 0px 0px 0px;
+	}
+}
+.services-body {
+	@include flexbox();
+	@media (max-width: $md2+px) {
+		flex-wrap: wrap;
+	}
+}
+.services__column {
+	flex: 0 0 25%;
+	margin: 0px 0px 40px 0px;
+	padding: 0px 5px 0px 5px;
+	@media (max-width: $md2+px) {
+		flex: 0 0 50%;
+	}
+
+	@media (max-width: 380px) {
+		flex: 1 1  100%;
+	}
+}
+.services__item {
+	@include flexbox();
+	height: 100%;
+	flex-direction: column;
+}
+.services-item__image {
+	display: block;
+	padding: 0 0 110% 0;
+	margin: 0px 0px 25px 0px;
+	@media (max-width: 380px) {
+		margin: 0px 0px 15px 0px;
+	}
+}
+.services-item__pic{
+	display: none;
+}
+.services-item__title {
+	height: 50px;
+	overflow: hidden;
+	max-width: 185px;
+	padding: 0px 10px 0px 0px;
+	display: block;
+	font-family: 'Akzidenz-GroteskBQBold';
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	color: #000;
+	margin: 0px 0px 30px 0px;
+	@media (max-width: 380px) {
+		max-width: none;
+		height: auto;
+		overflow: visible;
+		margin: 0px 0px 15px 0px;
+	}
+}
+.services-item__text {
+	flex: 1 1 auto;
+	max-width: 185px;
+	padding: 0px 10px 0px 0px;
+	font-size: 15px;
+	line-height: 25px;
+	margin: 0px 0px 20px 0px;
+	@media (max-width: 380px) {
+		max-width: none;
+		margin: 0px 0px 15px 0px;
+	}
+}
+.services-item__btn {
+	margin: 0px 0px 29px 0px;
+	@media (max-width: 380px) {
+		margin: 0px 0px 19px 0px;
+	}
+}
+.services-item__link {
+	font-family: 'Bebas';
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: underline;
+	letter-spacing: 1.5px;
+}
+//===================================================
+
+//BLOCK ...
+
 //===================================================
 
 //</ОСНОВНОЙ БЛОК>
