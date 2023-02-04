@@ -70,7 +70,7 @@ function ibg() {
 ibg();
 //=========================
 
-// CONNECT MAP
+// Connect map
 function initMap() {
     // The location of Uluru
     const uluru = { lat: 40.6976701, lng: -74.2598705 };
