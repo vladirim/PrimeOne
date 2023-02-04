@@ -5,7 +5,6 @@
 @mixin rotate($deg) {-moz-transform: rotate($deg); -ms-transform: rotate($deg); -webkit-transform: rotate($deg); -o-transform: rotate($deg); transform: rotate($deg);}
 //</МИКСИНЫ>
 
-
 //<ШРИФТЫ>
 
 //<Подключаем шрифты>
@@ -28,7 +27,6 @@
 
 //font-display: swap;
 //</Подключаем шрифты>
-
 
 //<Шрифт по умолчанию>
 $fontfamily: "PT Sans";
@@ -109,7 +107,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 
 //<ОСНОВНОЙ БЛОК>
-
 //BLOCK PRIVATE
 .private {
 	@include flexbox();
@@ -408,13 +405,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	padding: 0px 0px 0px 35px;
 }
 .contacts-body__item--1 {
-	background: url(/img/contacts/icons/01.svg) left no-repeat;
+	background: url(img/contacts/icons/01.svg) left no-repeat;
 }
 .contacts-body__item--2 {
-	background: url(/img/contacts/icons/02.svg) left no-repeat;
+	background: url(img/contacts/icons/02.svg) left no-repeat;
 }
 .contacts-body__item--3 {
-	background: url(/img/contacts/icons/03.svg) left no-repeat;
+	background: url(img/contacts/icons/03.svg) left no-repeat;
 }
 .contacts-social {
 	@include flexbox();
@@ -464,17 +461,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .contacts-content-form-line {
 	margin: 0px 0px 25px 0px;
 }
-.input {
-}
-.contacts-content-form-button {
-}
-.contacts-content-form__btn {
-}
 //===================================================
-
-//BLOCK ...
-//===================================================
-
 //</ОСНОВНОЙ БЛОК>
 
 
