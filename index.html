@@ -190,6 +190,56 @@
                 </div>
             </div>
         </div>
+        <div class="contacts">
+            <div class="contacts-top">
+                <div class="container">
+                    <div class="contacts__title">Say Hello</div>
+                    <div class="contacts-body">
+                        <div class="contacts-body__column">
+                            <div class="contacts-body__item contacts-body__item--1">45-35 #B 39th St, Sunnyside, NY 11104</div>
+                        </div>
+                        <div class="contacts-body__column">
+                            <a href="mailto:contact@primeone.com" class="contacts-body__item contacts-body__item--2">contact@primeone.com</a>
+                        </div>
+                        <div class="contacts-body__column">
+                            <a href="tel:7187777777" class="contacts-body__item contacts-body__item--3">(718) 777-77**</a>
+                        </div>
+                        <div class="contacts-body__column">
+                            <div class="contacts-social">
+                                <a href="" class="contacts-social__item"><img src="/img/icons/social/01.svg" alt=""></a>
+                                <a href="" class="contacts-social__item"><img src="/img/icons/social/02.svg" alt=""></a>
+                                <a href="" class="contacts-social__item"><img src="/img/icons/social/03.svg" alt=""></a>
+                                <a href="" class="contacts-social__item"><img src="/img/icons/social/04.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts-content">
+                <div class="contacts-content__column">
+                    <div class="contacts-content__map" id="map"></div>
+                </div>
+                <div class="contacts-content__column">
+                    <div class="contacts-content-form">
+                        <div class="contacts-content-form__title">Get in touch</div>
+                        <form action="#" class="contacts-content-form-body">
+                            <div class="contacts-content-form-line">
+                                <input autocomplete="off" type="text" placeholder="Name" name="form[]" class="input req">
+                            </div>
+                            <div class="contacts-content-form-line">
+                                <input autocomplete="off" type="text" placeholder="E-mail or phone number" name="form[]" class="input">
+                            </div>
+                            <div class="contacts-content-form-line">
+                                <textarea autocomplete="off" placeholder="Your message" name="form[]" class="input"> </textarea>
+                            </div>
+                            <div class="contacts-content-form-button">
+                                <button type="submit" class="contacts-content-form__btn btn btn--w">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -198,4 +248,8 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/main.js"></script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF5KeiMxZpwAWUca4rSSEZAwTYUxOl2pg&callback=initMap&v=weekly"
+      defer
+    ></script>
 </html>

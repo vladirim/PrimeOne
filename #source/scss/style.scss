@@ -372,9 +372,107 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 //===================================================
 
+//BLOCK CONTACTS
+.contacts {
+	padding: 80px 0px 0px 0px;
+	@media (max-width: $md2+px) {
+		padding: 30px 0px 0px 0px;
+	}
+}
+.contacts-top {
+	padding: 0px 0px 0px 30px;
+}
+.contacts__title {
+	font-family: 'Akzidenz-GroteskBQBold';
+	text-transform: uppercase;
+	font-size: 50px;
+	letter-spacing: 5px;
+	margin: 0px 0px 30px 0px;
+}
+.contacts-body {
+	@include flexbox();
+	flex-wrap: wrap;
+}
+.contacts-body__column {
+	flex: 0 0 50%;
+	margin: 0px 0px 20px 0px;
+	@media (max-width: $md2+px) {
+		flex: 1 1 100%;
+	}
+}
+.contacts-body__item {
+	font-size: 15px;
+	color: #000;
+	display: inline-block;
+	line-height: 27px;
+	padding: 0px 0px 0px 35px;
+}
+.contacts-body__item--1 {
+	background: url(/img/contacts/icons/01.svg) left no-repeat;
+}
+.contacts-body__item--2 {
+	background: url(/img/contacts/icons/02.svg) left no-repeat;
+}
+.contacts-body__item--3 {
+	background: url(/img/contacts/icons/03.svg) left no-repeat;
+}
+.contacts-social {
+	@include flexbox();
+}
+.contacts-social__item {
+	margin: 0px 30px 0px 0px;
+	&:last-child {
+		margin: 0px 0px 0px 0px;
+	}
+}
+.contacts-content {
+	@include flexbox();
+	background-color: #000;
+	@media (max-width: $md2+px) {
+		display: block;
+	}
+}
+.contacts-content__column {
+	flex: 0 0 50%;
+}
+.contacts-content__map {
+	height: 100%;
+	@media (max-width: $md2+px) {
+		height: 300px;
+	}
+}
+.contacts-content-form {
+	padding: 55px 60px;
+	@media (max-width: $md2+px) {
+		padding: 30px;
+	}
+}
+.contacts-content-form__title {
+	font-family: 'Akzidenz-GroteskBQBold';
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: 5px;
+	margin: 0px 0px 30px 0px;
+}
+.contacts-content-form-body {
+	max-width: 375px;
+	@media (max-width: $md2+px) {
+		max-width: none;
+	}
+}
+.contacts-content-form-line {
+	margin: 0px 0px 25px 0px;
+}
+.input {
+}
+.contacts-content-form-button {
+}
+.contacts-content-form__btn {
+}
+//===================================================
+
 //BLOCK ...
-
-
 //===================================================
 
 //</ОСНОВНОЙ БЛОК>
